@@ -1,0 +1,1190 @@
+diag_files:
+- file_name: ocean_daily
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 days
+  varlist:
+  - module: ocean_model
+    var_name: zos
+  - module: ocean_model
+    var_name: zos
+    output_name: zosmin
+    reduction: min
+  - module: ocean_model
+    var_name: zos
+    output_name: zosmax
+    reduction: max
+  - module: ocean_model
+    var_name: tos
+  - module: ocean_model
+    var_name: tos
+    output_name: tosmin
+    reduction: min
+  - module: ocean_model
+    var_name: tos
+    output_name: tosmax
+    reduction: max
+  - module: ocean_model
+    var_name: tossq
+  - module: ocean_model
+    var_name: sos
+  - module: ocean_model
+    var_name: sossq
+  - module: ocean_model
+    var_name: SSU
+    output_name: ssu
+  - module: ocean_model
+    var_name: SSV
+    output_name: ssv
+  - module: ocean_model
+    var_name: ePBL_h_ML
+    output_name: omldamax
+    reduction: max
+  reduction: average
+  kind: r4
+- file_name: ocean_month_snap
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: mass_wt
+  - module: ocean_model
+    var_name: opottempmint
+  - module: ocean_model
+    var_name: somint
+  reduction: none
+  kind: r4
+- file_name: ocean_month
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: pbo
+  - module: ocean_model
+    var_name: pso
+  - module: ocean_model
+    var_name: zos
+  - module: ocean_model
+    var_name: zossq
+  - module: ocean_model
+    var_name: tos
+  - module: ocean_model
+    var_name: tossq
+  - module: ocean_model
+    var_name: tob
+  - module: ocean_model
+    var_name: sos
+  - module: ocean_model
+    var_name: sossq
+  - module: ocean_model
+    var_name: sob
+  - module: ocean_model
+    var_name: mlotst
+  - module: ocean_model
+    var_name: mlotstsq
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmin
+    reduction: min
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmax
+    reduction: max
+  - module: ocean_model
+    var_name: T_adx_2d
+  - module: ocean_model
+    var_name: T_ady_2d
+  - module: ocean_model
+    var_name: S_adx_2d
+  - module: ocean_model
+    var_name: S_ady_2d
+  - module: ocean_model
+    var_name: umo_2d
+  - module: ocean_model
+    var_name: vmo_2d
+  - module: ocean_model
+    var_name: prlq
+  - module: ocean_model
+    var_name: prsn
+  - module: ocean_model
+    var_name: evs
+  - module: ocean_model
+    var_name: friver
+  - module: ocean_model
+    var_name: ficeberg
+  - module: ocean_model
+    var_name: fsitherm
+  - module: ocean_model
+    var_name: wfo
+  - module: ocean_model
+    var_name: net_massout
+  - module: ocean_model
+    var_name: net_massin
+  - module: ocean_model
+    var_name: sfdsi
+  - module: ocean_model
+    var_name: hfrainds
+  - module: ocean_model
+    var_name: hfevapds
+  - module: ocean_model
+    var_name: hfrunoffds
+  - module: ocean_model
+    var_name: hfsnthermds
+  - module: ocean_model
+    var_name: hfsifrazil
+  - module: ocean_model
+    var_name: hfibthermds
+  - module: ocean_model
+    var_name: hfsolidrunoffds
+  - module: ocean_model
+    var_name: rlntds
+  - module: ocean_model
+    var_name: hflso
+  - module: ocean_model
+    var_name: hfsso
+  - module: ocean_model
+    var_name: rsntds
+  - module: ocean_model
+    var_name: rsdo
+  - module: ocean_model
+    var_name: hfds
+  - module: ocean_model
+    var_name: net_heat_coupler
+  - module: ocean_model
+    var_name: heat_content_massin
+  - module: ocean_model
+    var_name: heat_content_massout
+  - module: ocean_model
+    var_name: heat_content_surfwater
+  - module: ocean_model
+    var_name: heat_content_fprec
+  - module: ocean_model
+    var_name: heat_content_cond
+  - module: ocean_model
+    var_name: LwLatSens
+  - module: ocean_model
+    var_name: Heat_PmE
+  - module: ocean_model
+    var_name: nonpenSW
+  - module: ocean_model
+    var_name: tauuo
+  - module: ocean_model
+    var_name: tauvo
+  - module: ocean_model
+    var_name: ustar
+  - module: ocean_model
+    var_name: temp_layer_ave
+  - module: ocean_model
+    var_name: salt_layer_ave
+  - module: ocean_model
+    var_name: MLD_003
+  - module: ocean_model
+    var_name: MLD_restrat
+  - module: ocean_model
+    var_name: udml_restrat
+  - module: ocean_model
+    var_name: vdml_restrat
+  - module: ocean_model
+    var_name: uml_restrat
+  - module: ocean_model
+    var_name: vml_restrat
+  - module: ocean_model
+    var_name: MSTAR
+  reduction: average
+  kind: r4
+- file_name: ocean_month_z
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: obvfsq
+  - module: ocean_model_z
+    var_name: uo
+  - module: ocean_model_z
+    var_name: vo
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vhml
+  reduction: average
+  kind: r4
+- file_name: ocean_month_rho2
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model_rho2
+    var_name: volcello
+  - module: ocean_model_rho2
+    var_name: thkcello
+  - module: ocean_model_rho2
+    var_name: vmo
+  - module: ocean_model_rho2
+    var_name: vhml
+  reduction: average
+  kind: r4
+- file_name: ocean_annual
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model
+    var_name: volcello
+  - module: ocean_model
+    var_name: pbo
+  - module: ocean_model
+    var_name: pso
+  - module: ocean_model
+    var_name: masscello
+  - module: ocean_model
+    var_name: thkcello
+  - module: ocean_model
+    var_name: zos
+  - module: ocean_model
+    var_name: zossq
+  - module: ocean_model
+    var_name: thetao
+  - module: ocean_model
+    var_name: tos
+  - module: ocean_model
+    var_name: tossq
+  - module: ocean_model
+    var_name: tob
+  - module: ocean_model
+    var_name: so
+  - module: ocean_model
+    var_name: sos
+  - module: ocean_model
+    var_name: sossq
+  - module: ocean_model
+    var_name: sob
+  - module: ocean_model
+    var_name: mlotst
+  - module: ocean_model
+    var_name: mlotstsq
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmin
+    reduction: min
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmax
+    reduction: max
+  - module: ocean_model
+    var_name: T_adx_2d
+  - module: ocean_model
+    var_name: T_ady_2d
+  - module: ocean_model
+    var_name: umo_2d
+  - module: ocean_model
+    var_name: vmo_2d
+  - module: ocean_model
+    var_name: prlq
+  - module: ocean_model
+    var_name: prsn
+  - module: ocean_model
+    var_name: evs
+  - module: ocean_model
+    var_name: friver
+  - module: ocean_model
+    var_name: ficeberg
+  - module: ocean_model
+    var_name: fsitherm
+  - module: ocean_model
+    var_name: wfo
+  - module: ocean_model
+    var_name: net_massout
+  - module: ocean_model
+    var_name: net_massin
+  - module: ocean_model
+    var_name: sfdsi
+  - module: ocean_model
+    var_name: hfrainds
+  - module: ocean_model
+    var_name: hfevapds
+  - module: ocean_model
+    var_name: hfrunoffds
+  - module: ocean_model
+    var_name: hfsnthermds
+  - module: ocean_model
+    var_name: hfsifrazil
+  - module: ocean_model
+    var_name: hfibthermds
+  - module: ocean_model
+    var_name: hfsolidrunoffds
+  - module: ocean_model
+    var_name: rlntds
+  - module: ocean_model
+    var_name: hflso
+  - module: ocean_model
+    var_name: hfsso
+  - module: ocean_model
+    var_name: rsntds
+  - module: ocean_model
+    var_name: rsdo
+  - module: ocean_model
+    var_name: hfds
+  - module: ocean_model
+    var_name: net_heat_coupler
+  - module: ocean_model
+    var_name: heat_content_massin
+  - module: ocean_model
+    var_name: heat_content_massout
+  - module: ocean_model
+    var_name: heat_content_surfwater
+  - module: ocean_model
+    var_name: heat_content_fprec
+  - module: ocean_model
+    var_name: heat_content_cond
+  - module: ocean_model
+    var_name: LwLatSens
+  - module: ocean_model
+    var_name: Heat_PmE
+  - module: ocean_model
+    var_name: nonpenSW
+  - module: ocean_model
+    var_name: tauuo
+  - module: ocean_model
+    var_name: tauvo
+  - module: ocean_model
+    var_name: ustar
+  - module: ocean_model
+    var_name: opottempmint
+  - module: ocean_model
+    var_name: somint
+  - module: ocean_model
+    var_name: opottemppmdiff
+  - module: ocean_model
+    var_name: difmxybo
+  - module: ocean_model
+    var_name: dispkexyfo
+  - module: ocean_model
+    var_name: e
+  - module: ocean_model
+    var_name: speed
+  - module: ocean_model
+    var_name: KE
+  - module: ocean_model
+    var_name: mass_wt
+  - module: ocean_model
+    var_name: temp_layer_ave
+  - module: ocean_model
+    var_name: salt_layer_ave
+  - module: ocean_model
+    var_name: TKE_tidal
+  - module: ocean_model
+    var_name: TKE_itidal
+  - module: ocean_model
+    var_name: MLD_003
+  - module: ocean_model
+    var_name: MLD_003
+    output_name: MLD_003_min
+    reduction: min
+  - module: ocean_model
+    var_name: MLD_003
+    output_name: MLD_003_max
+    reduction: max
+  - module: ocean_model
+    var_name: MSTAR
+  - module: ocean_model
+    var_name: MEKE_Ue
+  - module: ocean_model
+    var_name: MEKE_Le
+  - module: ocean_model
+    var_name: MEKE_KH
+  - module: ocean_model
+    var_name: subML_N2
+  - module: ocean_model
+    var_name: tos
+    output_name: tos_max
+    reduction: max
+  - module: ocean_model
+    var_name: tos
+    output_name: tos_min
+    reduction: min
+  - module: ocean_model
+    var_name: diabatic_diff_temp_tendency
+  - module: ocean_model
+    var_name: diabatic_diff_saln_tendency
+  - module: ocean_model
+    var_name: ndiff_tracer_conc_tendency_T
+  - module: ocean_model
+    var_name: ndiff_tracer_conc_tendency_S
+  - module: ocean_model
+    var_name: opottemppmdiff_2d
+  - module: ocean_model
+    var_name: osaltpmdiff_2d
+  - module: ocean_model
+    var_name: T_tendency
+  - module: ocean_model
+    var_name: S_tendency
+  - module: ocean_model
+    var_name: opottemptend_2d
+  - module: ocean_model
+    var_name: osalttend_2d
+  - module: ocean_model
+    var_name: T_advection_xy_2d
+  - module: ocean_model
+    var_name: S_advection_xy_2d
+  - module: ocean_model
+    var_name: T_tendency_vert_remap
+  - module: ocean_model
+    var_name: S_tendency_vert_remap
+  - module: ocean_model
+    var_name: Th_tendency_vert_remap_2d
+  - module: ocean_model
+    var_name: Sh_tendency_vert_remap_2d
+  - module: ocean_model
+    var_name: frazil_heat_tendency_2d
+  - module: ocean_model
+    var_name: boundary_forcing_heat_tendency_2d
+  - module: ocean_model
+    var_name: boundary_forcing_salt_tendency_2d
+  reduction: average
+  kind: r4
+- file_name: ocean_annual_z
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: thetao_xyave
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: so_xyave
+  - module: ocean_model_z
+    var_name: obvfsq
+  - module: ocean_model_z
+    var_name: agessc
+  - module: ocean_model_z
+    var_name: uo
+  - module: ocean_model_z
+    var_name: vo
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: uhml
+  - module: ocean_model_z
+    var_name: vhml
+  - module: ocean_model_z
+    var_name: uh
+  - module: ocean_model_z
+    var_name: vh
+  - module: ocean_model_z
+    var_name: T_adx
+  - module: ocean_model_z
+    var_name: T_ady
+  - module: ocean_model_z
+    var_name: S_adx
+  - module: ocean_model_z
+    var_name: S_ady
+  - module: ocean_model_z
+    var_name: rsdoabsorb
+  - module: ocean_model_z
+    var_name: opottemptend
+  - module: ocean_model_z
+    var_name: opottempdiff
+  - module: ocean_model_z
+    var_name: osalttend
+  - module: ocean_model_z
+    var_name: osaltpmdiff
+  - module: ocean_model_z
+    var_name: osaltdiff
+  - module: ocean_model_z
+    var_name: frazil_heat_tendency
+  - module: ocean_model_z
+    var_name: T_advection_xy
+  - module: ocean_model_z
+    var_name: S_advection_xy
+  - module: ocean_model_z
+    var_name: Th_tendency_vert_remap
+  - module: ocean_model_z
+    var_name: Sh_tendency_vert_remap
+  - module: ocean_model_z
+    var_name: boundary_forcing_heat_tendency
+  - module: ocean_model_z
+    var_name: boundary_forcing_salt_tendency
+  - module: ocean_model_z
+    var_name: difvho
+  - module: ocean_model_z
+    var_name: difvso
+  - module: ocean_model_z
+    var_name: difmxybo
+  - module: ocean_model_z
+    var_name: dispkexyfo
+  - module: ocean_model_z
+    var_name: Kd_interface
+  - module: ocean_model_z
+    var_name: Kd_shear
+  - module: ocean_model_z
+    var_name: Kd_itides
+  - module: ocean_model_z
+    var_name: Kd_BBL
+  - module: ocean_model_z
+    var_name: Kd_ePBL
+  reduction: average
+  kind: r4
+- file_name: ocean_annual_rho2
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model_rho2
+    var_name: volcello
+  - module: ocean_model_rho2
+    var_name: thkcello
+  - module: ocean_model_rho2
+    var_name: umo
+  - module: ocean_model_rho2
+    var_name: uhml
+  - module: ocean_model_rho2
+    var_name: vmo
+  - module: ocean_model_rho2
+    var_name: vhml
+  reduction: average
+  kind: r4
+- file_name: ocean_scalar_month
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: masso
+  - module: ocean_model
+    var_name: volo
+  - module: ocean_model
+    var_name: thetaoga
+  - module: ocean_model
+    var_name: tosga
+  - module: ocean_model
+    var_name: soga
+  - module: ocean_model
+    var_name: sosga
+  - module: ocean_model
+    var_name: ave_wfo
+  - module: ocean_model
+    var_name: ave_evs
+  - module: ocean_model
+    var_name: ave_hfsso
+  - module: ocean_model
+    var_name: ave_rsntds
+  - module: ocean_model
+    var_name: ave_rlntds
+  - module: ocean_model
+    var_name: ave_hflso
+  - module: ocean_model
+    var_name: ave_hfds
+  - module: ocean_model
+    var_name: net_heat_coupler_ga
+  - module: ocean_model
+    var_name: LwLatSens_ga
+  - module: ocean_model
+    var_name: ssh_ga
+  - module: ocean_model
+    var_name: precip_ga
+  reduction: average
+  kind: r8
+- file_name: ocean_scalar_annual
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model
+    var_name: masso
+  - module: ocean_model
+    var_name: volo
+  - module: ocean_model
+    var_name: thetaoga
+  - module: ocean_model
+    var_name: tosga
+  - module: ocean_model
+    var_name: soga
+  - module: ocean_model
+    var_name: sosga
+  - module: ocean_model
+    var_name: ave_wfo
+  - module: ocean_model
+    var_name: ave_evs
+  - module: ocean_model
+    var_name: ave_hfsso
+  - module: ocean_model
+    var_name: ave_rsntds
+  - module: ocean_model
+    var_name: ave_rlntds
+  - module: ocean_model
+    var_name: ave_hflso
+  - module: ocean_model
+    var_name: ave_hfds
+  - module: ocean_model
+    var_name: net_heat_coupler_ga
+  - module: ocean_model
+    var_name: LwLatSens_ga
+  - module: ocean_model
+    var_name: ssh_ga
+  - module: ocean_model
+    var_name: precip_ga
+  reduction: average
+  kind: r8
+- file_name: ocean_static
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: -1 months
+  varlist:
+  - module: ocean_model
+    var_name: areacello
+  - module: ocean_model
+    var_name: deptho
+  - module: ocean_model
+    var_name: hfgeou
+  - module: ocean_model
+    var_name: sftof
+  - module: ocean_model
+    var_name: Coriolis
+  - module: ocean_model
+    var_name: geolon
+  - module: ocean_model
+    var_name: geolat
+  - module: ocean_model
+    var_name: geolon_c
+  - module: ocean_model
+    var_name: geolat_c
+  - module: ocean_model
+    var_name: geolon_u
+  - module: ocean_model
+    var_name: geolat_u
+  - module: ocean_model
+    var_name: geolon_v
+  - module: ocean_model
+    var_name: geolat_v
+  - module: ocean_model
+    var_name: wet
+  - module: ocean_model
+    var_name: wet_c
+  - module: ocean_model
+    var_name: wet_u
+  - module: ocean_model
+    var_name: wet_v
+  - module: ocean_model
+    var_name: dxt
+  - module: ocean_model
+    var_name: dyt
+  - module: ocean_model
+    var_name: dxCu
+  - module: ocean_model
+    var_name: dyCu
+  - module: ocean_model
+    var_name: dxCv
+  - module: ocean_model
+    var_name: dyCv
+  - module: ocean_model
+    var_name: areacello_cu
+  - module: ocean_model
+    var_name: areacello_cv
+  - module: ocean_model
+    var_name: areacello_bu
+  reduction: none
+  kind: r4
+- file_name: ocean_Barents_opening
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 6. 62.
+    corner2: 6. 62.
+    corner3: 6. 80.2
+    corner4: 6. 80.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Bering_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -171.4 66.1
+    corner2: -171.4 66.1
+    corner3: -168.7 66.1
+    corner4: -168.7 66.1
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Davis_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -65.0 66.0
+    corner2: -65.0 66.0
+    corner3: -48.0 66.0
+    corner4: -48.0 66.0
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Windward_Passage
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -75.0 19.96
+    corner2: -75.0 19.96
+    corner3: -72.5 19.96
+    corner4: -72.5 19.96
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Denmark_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -42.5 65.
+    corner2: -42.5 65.
+    corner3: -20. 65.
+    corner4: -20. 65.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Drake_Passage
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -70. -71.
+    corner2: -70. -71.
+    corner3: -70. -54.5
+    corner4: -70. -54.5
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_English_Channel
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 2.16 50.8
+    corner2: 2.16 50.8
+    corner3: 2.16 51.2
+    corner4: 2.16 51.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Faroe_Scotland
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -6.3 58.
+    corner2: -6.3 58.
+    corner3: -6.3 61.5
+    corner4: -6.3 61.5
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Florida_Bahamas
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -80.5 25.
+    corner2: -80.5 25.
+    corner3: -77.8 25.
+    corner4: -77.8 25.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Fram_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -22. 81.2
+    corner2: -22. 81.2
+    corner3: 0.0 81.2
+    corner4: 0.0 81.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Iceland_Faroe_V
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -17.89 62.25
+    corner2: -17.89 62.25
+    corner3: -6. 62.25
+    corner4: -6. 62.25
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Iceland_Faroe_U
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -17.74 62.31
+    corner2: -17.74 62.31
+    corner3: -17.74 63.6
+    corner4: -17.74 63.6
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Indonesian_Throughflow
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -246.0 -8.1
+    corner2: -246.0 -8.1
+    corner3: -220.0 -8.1
+    corner4: -220.0 -8.1
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Mozambique_Channel
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 39. -16.
+    corner2: 39. -16.
+    corner3: 46. -16.
+    corner4: 46. -16.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
+- file_name: ocean_Pacific_undercurrent
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -155. -2.
+    corner2: -155. -2.
+    corner3: -155. 2.
+    corner4: -155. 2.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Taiwan_Luzon
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -239.5 17.
+    corner2: -239.5 17.
+    corner3: -239.5 23.
+    corner4: -239.5 23.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Agulhas_section
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 20. -71.0
+    corner2: 20. -71.0
+    corner3: 20. -34
+    corner4: 20. -34
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Gibraltar_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -5. 35.8
+    corner2: -5. 35.8
+    corner3: -5. 36.2
+    corner4: -5. 36.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: umo
+  - module: ocean_model_z
+    var_name: uo
+  reduction: average
+  kind: r4
+- file_name: ocean_Iceland_Norway
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -20. 65.
+    corner2: -20. 65.
+    corner3: 15. 65.
+    corner4: 15. 65.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    zbounds: -999 -999
+  - module: ocean_model_z
+    var_name: thetao
+  - module: ocean_model_z
+    var_name: so
+  - module: ocean_model_z
+    var_name: vmo
+  - module: ocean_model_z
+    var_name: vo
+  reduction: average
+  kind: r4
