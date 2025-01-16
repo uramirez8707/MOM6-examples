@@ -1,0 +1,171 @@
+diag_files:
+- file_name: ice_daily
+  time_units: days
+  unlimdim: time
+  freq: 1 days
+  varlist:
+  - module: ice_model
+    var_name: SST
+  - module: ice_model
+    var_name: SSH
+  - module: ice_model
+    var_name: SSS
+  - module: ice_model
+    var_name: EXT
+  reduction: average
+  kind: r4
+- file_name: ice_month
+  time_units: days
+  unlimdim: time
+  freq: 1 months
+  varlist:
+  - module: ice_model
+    var_name: CELL_AREA
+    reduction: none
+  - module: ice_model
+    var_name: COSROT
+    reduction: none
+  - module: ice_model
+    var_name: GEOLAT
+    reduction: none
+  - module: ice_model
+    var_name: GEOLON
+    reduction: none
+  - module: ice_model
+    var_name: SINROT
+    reduction: none
+  - module: ice_model
+    var_name: ALB
+  - module: ice_model
+    var_name: BHEAT
+  - module: ice_model
+    var_name: BMELT
+  - module: ice_model
+    var_name: BSNK
+  - module: ice_model
+    var_name: CALVING
+  - module: ice_model
+    var_name: CALVING_HFLX
+  - module: ice_model
+    var_name: CN
+  - module: ice_model
+    var_name: E2MELT
+  - module: ice_model
+    var_name: EVAP
+  - module: ice_model
+    var_name: EXT
+  - module: ice_model
+    var_name: EXT
+    output_name: EXT_MIN
+    reduction: min
+  - module: ice_model
+    var_name: EXT
+    output_name: EXT_MAX
+    reduction: max
+  - module: ice_model
+    var_name: FA_X
+  - module: ice_model
+    var_name: FA_Y
+  - module: ice_model
+    var_name: FI_X
+  - module: ice_model
+    var_name: FI_Y
+  - module: ice_model
+    var_name: FRAZIL
+  - module: ice_model
+    var_name: IX_TRANS
+  - module: ice_model
+    var_name: IY_TRANS
+  - module: ice_model
+    var_name: LH
+  - module: ice_model
+    var_name: LSNK
+  - module: ice_model
+    var_name: LSRC
+  - module: ice_model
+    var_name: LW
+  - module: ice_model
+    var_name: RAIN
+  - module: ice_model
+    var_name: RUNOFF
+  - module: ice_model
+    var_name: SALTF
+  - module: ice_model
+    var_name: SH
+  - module: ice_model
+    var_name: SNOWFL
+  - module: ice_model
+    var_name: SN2IC
+  - module: ice_model
+    var_name: SSH
+  - module: ice_model
+    var_name: SSS
+  - module: ice_model
+    var_name: SST
+  - module: ice_model
+    var_name: SW
+  - module: ice_model
+    var_name: TMELT
+  - module: ice_model
+    var_name: TSN
+  - module: ice_model
+    var_name: T1
+  - module: ice_model
+    var_name: T2
+  - module: ice_model
+    var_name: T3
+  - module: ice_model
+    var_name: T4
+  - module: ice_model
+    var_name: UO
+  - module: ice_model
+    var_name: VO
+  - module: ice_model
+    var_name: XPRT
+  - module: ice_model
+    var_name: siu
+  - module: ice_model
+    var_name: siv
+  - module: ice_model
+    var_name: sispeed
+  - module: ice_model
+    var_name: STRENGTH_hf
+  - module: ice_model
+    var_name: sitimefrac
+  - module: ice_model
+    var_name: sitemptop
+  - module: ice_model
+    var_name: siconc
+  - module: ice_model
+    var_name: sisnconc
+  - module: ice_model
+    var_name: simass
+  - module: ice_model
+    var_name: sisnmass
+  - module: ice_model
+    var_name: sisnthick
+  - module: ice_model
+    var_name: sithick
+  - module: ice_model
+    var_name: sivol
+  - module: ice_model
+    var_name: MIB
+  reduction: average
+  kind: r4
+- file_name: ice_static
+  time_units: days
+  unlimdim: time
+  freq: -1 months
+  varlist:
+  - module: ice_model
+    var_name: CELL_AREA
+  - module: ice_model
+    var_name: COSROT
+  - module: ice_model
+    var_name: GEOLAT
+  - module: ice_model
+    var_name: GEOLON
+  - module: ice_model
+    var_name: SINROT
+  reduction: none
+  kind: r4
