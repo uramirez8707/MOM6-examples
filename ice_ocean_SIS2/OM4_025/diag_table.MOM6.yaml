@@ -1,0 +1,1905 @@
+diag_files:
+- file_name: ocean_daily
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 days
+  varlist:
+  - module: ocean_model
+    var_name: zos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: zos
+    output_name: zosmin
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: zos
+    output_name: zosmax
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    output_name: tosmin
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    output_name: tosmax
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: tossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: SSU
+    output_name: ssu
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: SSV
+    output_name: ssv
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ePBL_h_ML
+    output_name: omldamax
+    reduction: max
+    kind: r4
+- file_name: ocean_month_snap
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: mass_wt
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: opottempmint
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: somint
+    reduction: none
+    kind: r4
+- file_name: ocean_month
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: pbo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: pso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: zos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: zossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tob
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sob
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotstsq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmin
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmax
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: T_adx_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: T_ady_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: S_adx_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: S_ady_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: umo_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: vmo_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: prlq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: prsn
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: evs
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: friver
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ficeberg
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: fsitherm
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: wfo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_massout
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_massin
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sfdsi
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfrainds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfevapds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfrunoffds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsnthermds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsifrazil
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfibthermds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsolidrunoffds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rlntds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hflso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rsntds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rsdo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_heat_coupler
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_massin
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_massout
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_surfwater
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_fprec
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_cond
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: LwLatSens
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: Heat_PmE
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: nonpenSW
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tauuo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tauvo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ustar
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: temp_layer_ave
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: salt_layer_ave
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MLD_003
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MLD_restrat
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: udml_restrat
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: vdml_restrat
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: uml_restrat
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: vml_restrat
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MSTAR
+    reduction: average
+    kind: r4
+- file_name: ocean_month_z
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: obvfsq
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vhml
+    reduction: average
+    kind: r4
+- file_name: ocean_month_rho2
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model_rho2
+    var_name: volcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: thkcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: vhml
+    reduction: average
+    kind: r4
+- file_name: ocean_annual
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model
+    var_name: volcello
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: pbo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: pso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: masscello
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: thkcello
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: zos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: zossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tob
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sos
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sossq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sob
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotstsq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmin
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: mlotst
+    output_name: mlotstmax
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: T_adx_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: T_ady_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: umo_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: vmo_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: prlq
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: prsn
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: evs
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: friver
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ficeberg
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: fsitherm
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: wfo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_massout
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_massin
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: sfdsi
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfrainds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfevapds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfrunoffds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsnthermds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsifrazil
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfibthermds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsolidrunoffds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rlntds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hflso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfsso
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rsntds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: rsdo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: hfds
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: net_heat_coupler
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_massin
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_massout
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_surfwater
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_fprec
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: heat_content_cond
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: LwLatSens
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: Heat_PmE
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: nonpenSW
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tauuo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tauvo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ustar
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: opottempmint
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: somint
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: opottemppmdiff
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: difmxybo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: dispkexyfo
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: e
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: speed
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: KE
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: mass_wt
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: temp_layer_ave
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: salt_layer_ave
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: TKE_tidal
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: TKE_itidal
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MLD_003
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MLD_003
+    output_name: MLD_003_min
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: MLD_003
+    output_name: MLD_003_max
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: MSTAR
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MEKE_Ue
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MEKE_Le
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: MEKE_KH
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: subML_N2
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    output_name: tos_max
+    reduction: max
+    kind: r4
+  - module: ocean_model
+    var_name: tos
+    output_name: tos_min
+    reduction: min
+    kind: r4
+  - module: ocean_model
+    var_name: diabatic_diff_temp_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: diabatic_diff_saln_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ndiff_tracer_conc_tendency_T
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: ndiff_tracer_conc_tendency_S
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: opottemppmdiff_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: osaltpmdiff_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: T_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: S_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: opottemptend_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: osalttend_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: T_advection_xy_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: S_advection_xy_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: T_tendency_vert_remap
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: S_tendency_vert_remap
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: Th_tendency_vert_remap_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: Sh_tendency_vert_remap_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: frazil_heat_tendency_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: boundary_forcing_heat_tendency_2d
+    reduction: average
+    kind: r4
+  - module: ocean_model
+    var_name: boundary_forcing_salt_tendency_2d
+    reduction: average
+    kind: r4
+- file_name: ocean_annual_z
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao_xyave
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so_xyave
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: obvfsq
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: agessc
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uhml
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vhml
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uh
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vh
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: T_adx
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: T_ady
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: S_adx
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: S_ady
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: rsdoabsorb
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: opottemptend
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: opottempdiff
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: osalttend
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: osaltpmdiff
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: osaltdiff
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: frazil_heat_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: T_advection_xy
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: S_advection_xy
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Th_tendency_vert_remap
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Sh_tendency_vert_remap
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: boundary_forcing_heat_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: boundary_forcing_salt_tendency
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: difvho
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: difvso
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: difmxybo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: dispkexyfo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Kd_interface
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Kd_shear
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Kd_itides
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Kd_BBL
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: Kd_ePBL
+    reduction: average
+    kind: r4
+- file_name: ocean_annual_rho2
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model_rho2
+    var_name: volcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: thkcello
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: uhml
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_rho2
+    var_name: vhml
+    reduction: average
+    kind: r4
+- file_name: ocean_scalar_month
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 1 months
+  varlist:
+  - module: ocean_model
+    var_name: masso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: volo
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: thetaoga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: tosga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: soga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: sosga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_wfo
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_evs
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hfsso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_rsntds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_rlntds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hflso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hfds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: net_heat_coupler_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: LwLatSens_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ssh_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: precip_ga
+    reduction: average
+    kind: r8
+- file_name: ocean_scalar_annual
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: 12 months
+  varlist:
+  - module: ocean_model
+    var_name: masso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: volo
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: thetaoga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: tosga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: soga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: sosga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_wfo
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_evs
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hfsso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_rsntds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_rlntds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hflso
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ave_hfds
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: net_heat_coupler_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: LwLatSens_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: ssh_ga
+    reduction: average
+    kind: r8
+  - module: ocean_model
+    var_name: precip_ga
+    reduction: average
+    kind: r8
+- file_name: ocean_static
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  freq: -1 months
+  varlist:
+  - module: ocean_model
+    var_name: areacello
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: deptho
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: hfgeou
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: sftof
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: Coriolis
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolon
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolat
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolon_c
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolat_c
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolon_u
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolat_u
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolon_v
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: geolat_v
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: wet
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: wet_c
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: wet_u
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: wet_v
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dxt
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dyt
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dxCu
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dyCu
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dxCv
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: dyCv
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: areacello_cu
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: areacello_cv
+    reduction: none
+    kind: r4
+  - module: ocean_model
+    var_name: areacello_bu
+    reduction: none
+    kind: r4
+- file_name: ocean_Barents_opening
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 6. 62.
+    corner2: 6. 62.
+    corner3: 6. 80.2
+    corner4: 6. 80.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Bering_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -171.4 66.1
+    corner2: -171.4 66.1
+    corner3: -168.7 66.1
+    corner4: -168.7 66.1
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Davis_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -65.0 66.0
+    corner2: -65.0 66.0
+    corner3: -48.0 66.0
+    corner4: -48.0 66.0
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Windward_Passage
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -75.0 19.96
+    corner2: -75.0 19.96
+    corner3: -72.5 19.96
+    corner4: -72.5 19.96
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Denmark_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -42.5 65.
+    corner2: -42.5 65.
+    corner3: -20. 65.
+    corner4: -20. 65.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Drake_Passage
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -70. -71.
+    corner2: -70. -71.
+    corner3: -70. -54.5
+    corner4: -70. -54.5
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_English_Channel
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 2.16 50.8
+    corner2: 2.16 50.8
+    corner3: 2.16 51.2
+    corner4: 2.16 51.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Faroe_Scotland
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -6.3 58.
+    corner2: -6.3 58.
+    corner3: -6.3 61.5
+    corner4: -6.3 61.5
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Florida_Bahamas
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -80.5 25.
+    corner2: -80.5 25.
+    corner3: -77.8 25.
+    corner4: -77.8 25.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Fram_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -22. 81.2
+    corner2: -22. 81.2
+    corner3: 0.0 81.2
+    corner4: 0.0 81.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Iceland_Faroe_V
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -17.89 62.25
+    corner2: -17.89 62.25
+    corner3: -6. 62.25
+    corner4: -6. 62.25
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Iceland_Faroe_U
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -17.74 62.31
+    corner2: -17.74 62.31
+    corner3: -17.74 63.6
+    corner4: -17.74 63.6
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Indonesian_Throughflow
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -246.0 -8.1
+    corner2: -246.0 -8.1
+    corner3: -220.0 -8.1
+    corner4: -220.0 -8.1
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Mozambique_Channel
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 39. -16.
+    corner2: 39. -16.
+    corner3: 46. -16.
+    corner4: 46. -16.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4
+- file_name: ocean_Pacific_undercurrent
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -155. -2.
+    corner2: -155. -2.
+    corner3: -155. 2.
+    corner4: -155. 2.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Taiwan_Luzon
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -239.5 17.
+    corner2: -239.5 17.
+    corner3: -239.5 23.
+    corner4: -239.5 23.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Agulhas_section
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: 20. -71.0
+    corner2: 20. -71.0
+    corner3: 20. -34
+    corner4: 20. -34
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Gibraltar_Strait
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -5. 35.8
+    corner2: -5. 35.8
+    corner3: -5. 36.2
+    corner4: -5. 36.2
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: umo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: uo
+    reduction: average
+    kind: r4
+- file_name: ocean_Iceland_Norway
+  time_units: days
+  unlimdim: time
+  is_ocean: true
+  sub_region:
+  - grid_type: latlon
+    corner1: -20. 65.
+    corner2: -20. 65.
+    corner3: 15. 65.
+    corner4: 15. 65.
+  freq: 1 days
+  varlist:
+  - module: ocean_model_z
+    var_name: volcello
+    reduction: average
+    zbounds: -999 -999
+    kind: r4
+  - module: ocean_model_z
+    var_name: thetao
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: so
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vmo
+    reduction: average
+    kind: r4
+  - module: ocean_model_z
+    var_name: vo
+    reduction: average
+    kind: r4

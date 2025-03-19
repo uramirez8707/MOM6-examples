@@ -1,0 +1,66 @@
+diag_files:
+- file_name: iceberg_month
+  time_units: days
+  unlimdim: time
+  freq: 1 months
+  varlist:
+  - module: icebergs
+    var_name: lon
+    reduction: none
+    kind: r4
+  - module: icebergs
+    var_name: lat
+    reduction: none
+    kind: r4
+  - module: icebergs
+    var_name: area
+    reduction: none
+    kind: r4
+  - module: icebergs
+    var_name: mask
+    reduction: none
+    kind: r4
+  - module: icebergs
+    var_name: melt
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: melt_buoy
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: melt_eros
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: melt_conv
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: virtual_area
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: mass
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: calving_hflx_in
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: unused_calving
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: accum_calving
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: real_calving
+    reduction: average
+    kind: r4
+  - module: icebergs
+    var_name: stored_ice
+    reduction: average
+    kind: r4

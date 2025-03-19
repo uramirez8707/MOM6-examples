@@ -1,0 +1,298 @@
+diag_files:
+- file_name: ice_daily
+  time_units: days
+  unlimdim: time
+  freq: 1 days
+  varlist:
+  - module: ice_model
+    var_name: SST
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SSH
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SSS
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: EXT
+    reduction: average
+    kind: r4
+- file_name: ice_month
+  time_units: days
+  unlimdim: time
+  freq: 1 months
+  varlist:
+  - module: ice_model
+    var_name: CELL_AREA
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: COSROT
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: GEOLAT
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: GEOLON
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: SINROT
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: ALB
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: BHEAT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: BMELT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: BSNK
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: CALVING
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: CALVING_HFLX
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: CN
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: E2MELT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: EVAP
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: EXT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: EXT
+    output_name: EXT_MIN
+    reduction: min
+    kind: r4
+  - module: ice_model
+    var_name: EXT
+    output_name: EXT_MAX
+    reduction: max
+    kind: r4
+  - module: ice_model
+    var_name: FA_X
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: FA_Y
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: FI_X
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: FI_Y
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: FRAZIL
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: IX_TRANS
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: IY_TRANS
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: LH
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: LSNK
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: LSRC
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: LW
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: RAIN
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: RUNOFF
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SALTF
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SH
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SNOWFL
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SN2IC
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SSH
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SSS
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SST
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: SW
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: TMELT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: TSN
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: T1
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: T2
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: T3
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: T4
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: UO
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: VO
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: XPRT
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: siu
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: siv
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sispeed
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: STRENGTH_hf
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sitimefrac
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sitemptop
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: siconc
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sisnconc
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: simass
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sisnmass
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sisnthick
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sithick
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: sivol
+    reduction: average
+    kind: r4
+  - module: ice_model
+    var_name: MIB
+    reduction: average
+    kind: r4
+- file_name: ice_static
+  time_units: days
+  unlimdim: time
+  freq: -1 months
+  varlist:
+  - module: ice_model
+    var_name: CELL_AREA
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: COSROT
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: GEOLAT
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: GEOLON
+    reduction: none
+    kind: r4
+  - module: ice_model
+    var_name: SINROT
+    reduction: none
+    kind: r4
